@@ -295,3 +295,28 @@ body { font-family: 'Segoe UI', sans-serif; color: #fff; background: #000; }
   mix-blend-mode: screen;
   opacity: .18;
 }
+
+/* ===== Botón de registro al final ===== */
+.register-section {
+  text-align: center;
+  margin: 60px 0 80px;
+}
+.btn-register {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #00e2ff;
+  color: #00131a;
+  padding: 16px 36px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 0 25px rgba(0, 226, 255, 0.25);
+  transition: all 0.3s ease;
+}
+.btn-register:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 40px rgba(0, 226, 255, 0.45);
+}
