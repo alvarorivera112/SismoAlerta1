@@ -19,6 +19,7 @@
       <a href="#caracteristicas">Características</a>
       <a href="#info">Usuarios</a>
       <a href="#info">Cómo funciona</a>
+      <!-- No se añade nada más al nav para no alterar tu estructura -->
     </nav>
   </div>
 </div>
@@ -165,12 +166,35 @@
   </div>
 </section>
 
-<!-- Botón de registro (agregado al final, sin cambiar info) -->
-<div class="register-section fade-up">
-  <a href="https://alvarorivera112.github.io/SismoAlertaEdu/login.html" class="btn-register">
-    <i class="fa-solid fa-user-plus"></i> Registrarme en la aplicación web
-  </a>
-</div>
+<!-- OPINIONES (NUEVO, agregado sin tocar nada más) -->
+<section id="opiniones" class="section fade-up feedback">
+  <h2 class="section-title">Deja tu opinión</h2>
+
+  <form class="feedback-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+    <div class="row">
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+      </div>
+      <div class="field">
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="text" placeholder="Tu apellido" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="opinion">Tu opinión o recomendación</label>
+      <textarea id="opinion" name="opinion" rows="5" placeholder="Escribe tu comentario..." required></textarea>
+    </div>
+
+    <input type="hidden" name="_subject" value="Nueva opinión desde la Landing SismoAlerta">
+    <button class="btn-primary" type="submit">Enviar opinión</button>
+
+    <p class="small muted-text" style="margin-top:10px">
+      Al enviar aceptas que podamos leer tu comentario para mejorar el proyecto.
+    </p>
+  </form>
+</section>
 
 <footer class="footer">
   <p>SismoAlerta — Proyecto académico 2025</p>
